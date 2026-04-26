@@ -1,9 +1,9 @@
+# .gitignore update pannu
+echo "node_modules/
+playwright-report/
+allure-results/
+allure-report/
+test-results/
+dist/
+.env" > .gitignore
 
-# Playwright
-node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
-.env
