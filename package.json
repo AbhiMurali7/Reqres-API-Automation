@@ -1,0 +1,32 @@
+{
+  "name": "reqres-api-automation",
+  "version": "1.0.0",
+  "description": "API Test Automation Framework for ReqRes using Playwright + TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test":             "npx playwright test",
+    "test:users":       "npx playwright test users.spec.ts",
+    "test:auth":        "npx playwright test auth.spec.ts",
+    "test:headed":      "npx playwright test --headed",
+    "test:debug":       "npx playwright test --debug",
+    "test:report":      "npx playwright show-report",
+    "allure:generate":  "allure generate allure-results --clean -o allure-report",
+    "allure:open":      "allure open allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "api-testing",
+    "reqres",
+    "automation"
+  ],
+  "author": "Abinaya Murali",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test":   "^1.52.0",
+    "@types/node":        "^22.0.0",
+    "allure-playwright":  "^3.0.0",
+    "typescript":         "^5.8.0",
+    "dotenv":             "^16.4.0"
+  }
+}
